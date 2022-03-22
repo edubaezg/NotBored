@@ -27,7 +27,7 @@ class HomeScreenViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction private func startButton(_ sender: Any) {
-        let activitiesVC = CategoriesView()
+        let activitiesVC = CategoriesViewController()
         navigationController?.pushViewController(activitiesVC, animated: true)
     }
     

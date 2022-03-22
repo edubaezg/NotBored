@@ -1,6 +1,6 @@
 import UIKit
 
-class ActivityView: UIViewController {
+class ActivityViewController: UIViewController {
     
     @IBOutlet weak var activityDescriptionLabel: UILabel!
     @IBOutlet weak var tryAnotherButton: UIButton!
@@ -21,7 +21,7 @@ class ActivityView: UIViewController {
     
 }
 
-extension ActivityView {
+extension ActivityViewController {
     func setup() {
         activityDescriptionLabel.text = "Learn to greet someone in a new language"
         tryAnotherButton.layer.cornerRadius = 8

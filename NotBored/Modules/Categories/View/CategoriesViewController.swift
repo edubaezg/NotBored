@@ -1,6 +1,6 @@
 import UIKit
 
-class CategoriesView: UIViewController {
+class CategoriesViewController: UIViewController {
 
     @IBOutlet weak var categoriesTableView: UITableView!
     
@@ -14,7 +14,7 @@ class CategoriesView: UIViewController {
 
 }
 
-extension CategoriesView {
+extension CategoriesViewController {
     private func setup() {
         title = "Categories"
         
@@ -28,11 +28,11 @@ extension CategoriesView {
     }
     
     @objc func randomTapped() {
-        navigationController?.pushViewController(ActivityView(title: "random"), animated: true)
+        navigationController?.pushViewController(ActivityViewController(title: "random"), animated: true)
     }
 }
 
-extension CategoriesView: UITableViewDelegate, UITableViewDataSource {
+extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         categories.count
     }
@@ -47,7 +47,7 @@ extension CategoriesView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(ActivityView(title: categories[indexPath.row]), animated: true)
+        navigationController?.pushViewController(ActivityViewController(title: categories[indexPath.row]), animated: true)
     }
     
 }

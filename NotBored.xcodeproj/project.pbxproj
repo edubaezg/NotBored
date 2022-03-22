@@ -18,6 +18,10 @@
 		B71034A727E9553800136989 /* CategoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034A527E9553800136989 /* CategoryViewCell.xib */; };
 		B71034AE27E96B0800136989 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034AC27E96B0800136989 /* ActivityView.swift */; };
 		B71034AF27E96B0800136989 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034AD27E96B0800136989 /* ActivityView.xib */; };
+		DD7D95CB27EA332200522B99 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */; };
+		DD7D95CC27EA332200522B99 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */; };
+		DD7D95CD27EA332200522B99 /* TermAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */; };
+		DD7D95CE27EA332200522B99 /* TermAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D95CA27EA332200522B99 /* TermAndConditionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		B71034A527E9553800136989 /* CategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewCell.xib; sourceTree = "<group>"; };
 		B71034AC27E96B0800136989 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		B71034AD27E96B0800136989 /* ActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermAndConditionsViewController.xib; sourceTree = "<group>"; };
+		DD7D95CA27EA332200522B99 /* TermAndConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermAndConditionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		B710348227E50B0900136989 /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				DD7D95C427EA332200522B99 /* Modules */,
 				B710349C27E510E200136989 /* Global */,
 				B710349B27E5100500136989 /* Categories */,
 				B71034AB27E96ADC00136989 /* Activity */,
@@ -130,6 +139,33 @@
 			path = Activity;
 			sourceTree = "<group>";
 		};
+		DD7D95C427EA332200522B99 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D95C527EA332200522B99 /* HomeScreen */,
+				DD7D95C827EA332200522B99 /* TermAndConditions */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DD7D95C527EA332200522B99 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */,
+				DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		DD7D95C827EA332200522B99 /* TermAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */,
+				DD7D95CA27EA332200522B99 /* TermAndConditionsViewController.swift */,
+			);
+			path = TermAndConditions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +227,8 @@
 				B710349027E50B0A00136989 /* LaunchScreen.storyboard in Resources */,
 				B71034A327E9525200136989 /* CategoriesView.xib in Resources */,
 				B71034A727E9553800136989 /* CategoryViewCell.xib in Resources */,
+				DD7D95CD27EA332200522B99 /* TermAndConditionsViewController.xib in Resources */,
+				DD7D95CB27EA332200522B99 /* HomeScreenViewController.xib in Resources */,
 				B71034AF27E96B0800136989 /* ActivityView.xib in Resources */,
 				B710348D27E50B0A00136989 /* Assets.xcassets in Resources */,
 			);
@@ -207,8 +245,10 @@
 				B710348427E50B0900136989 /* AppDelegate.swift in Sources */,
 				B71034A627E9553800136989 /* CategoryViewCell.swift in Sources */,
 				B710348627E50B0900136989 /* SceneDelegate.swift in Sources */,
+				DD7D95CE27EA332200522B99 /* TermAndConditionsViewController.swift in Sources */,
 				B71034A227E9525200136989 /* CategoriesView.swift in Sources */,
 				B71034AE27E96B0800136989 /* ActivityView.swift in Sources */,
+				DD7D95CC27EA332200522B99 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

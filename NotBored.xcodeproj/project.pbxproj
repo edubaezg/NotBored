@@ -19,6 +19,9 @@
 		B71034AE27E96B0800136989 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034AC27E96B0800136989 /* ActivityViewController.swift */; };
 		B71034AF27E96B0800136989 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034AD27E96B0800136989 /* ActivityViewController.xib */; };
 		B71034B327EA62CA00136989 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B227EA62CA00136989 /* ActivityModel.swift */; };
+		B71034B627EAA2E900136989 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B527EAA2E900136989 /* ActivityService.swift */; };
+		B71034B927EAA48800136989 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B827EAA48800136989 /* Paths.swift */; };
+		B71034BC27EAA88000136989 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034BB27EAA88000136989 /* ActivityViewModel.swift */; };
 		DD7D95CB27EA332200522B99 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */; };
 		DD7D95CC27EA332200522B99 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */; };
 		DD7D95CD27EA332200522B99 /* TermAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */; };
@@ -44,6 +47,9 @@
 		B71034AC27E96B0800136989 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		B71034AD27E96B0800136989 /* ActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
 		B71034B227EA62CA00136989 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		B71034B527EAA2E900136989 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		B71034B827EAA48800136989 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		B71034BB27EAA88000136989 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermAndConditionsViewController.xib; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 		B710349C27E510E200136989 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				B71034B727EAA47500136989 /* Utils */,
 				B710348327E50B0900136989 /* AppDelegate.swift */,
 				B710348527E50B0900136989 /* SceneDelegate.swift */,
 				B710348C27E50B0A00136989 /* Assets.xcassets */,
@@ -157,8 +164,10 @@
 		B71034AB27E96ADC00136989 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				B71034B427EAA2D600136989 /* Service */,
 				B71034B127EA62B800136989 /* Model */,
 				B71034B027EA62A900136989 /* View */,
+				B71034BA27EAA86700136989 /* ViewModel */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -178,6 +187,30 @@
 				B71034B227EA62CA00136989 /* ActivityModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B71034B427EAA2D600136989 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B71034B527EAA2E900136989 /* ActivityService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B71034B727EAA47500136989 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B71034B827EAA48800136989 /* Paths.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B71034BA27EAA86700136989 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B71034BB27EAA88000136989 /* ActivityViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DD7D95C427EA332200522B99 /* Modules */ = {
@@ -328,15 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71034B627EAA2E900136989 /* ActivityService.swift in Sources */,
 				B710349E27E9516E00136989 /* CategoriesViewModel.swift in Sources */,
 				B710348427E50B0900136989 /* AppDelegate.swift in Sources */,
 				B71034B327EA62CA00136989 /* ActivityModel.swift in Sources */,
+				B71034B927EAA48800136989 /* Paths.swift in Sources */,
 				B71034A627E9553800136989 /* CategoryViewCell.swift in Sources */,
 				B710348627E50B0900136989 /* SceneDelegate.swift in Sources */,
 				DD7D95CE27EA332200522B99 /* TermAndConditionsViewController.swift in Sources */,
 				B71034A227E9525200136989 /* CategoriesViewController.swift in Sources */,
 				B71034AE27E96B0800136989 /* ActivityViewController.swift in Sources */,
 				DD7D95CC27EA332200522B99 /* HomeScreenViewController.swift in Sources */,
+				B71034BC27EAA88000136989 /* ActivityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

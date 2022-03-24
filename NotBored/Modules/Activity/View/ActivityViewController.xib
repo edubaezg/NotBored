@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityView" customModule="NotBored" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityViewController" customModule="NotBored" customModuleProvider="target">
             <connections>
-                <outlet property="activityDescriptionLabel" destination="VNg-5g-IXo" id="eQM-ak-r4k"/>
-                <outlet property="tryAnotherButton" destination="RcK-Y9-bdf" id="s6p-xO-Nfg"/>
+                <outlet property="activityDescriptionLabel" destination="VNg-5g-IXo" id="xoJ-tl-Tfg"/>
+                <outlet property="activityIndicator" destination="R7M-Wb-L9E" id="pe5-0j-sjm"/>
+                <outlet property="categoryLabel" destination="57j-yI-IFY" id="6QS-Ij-6vM"/>
+                <outlet property="categoryStackView" destination="0uU-tu-76t" id="qDk-JU-5Nu"/>
+                <outlet property="containerStackView" destination="J9W-9Z-4gQ" id="39U-RH-L17"/>
+                <outlet property="participantsLabel" destination="3XP-Di-naF" id="YwT-Kg-OUX"/>
+                <outlet property="priceLabel" destination="Jhg-gj-7Lf" id="Lek-7O-rgo"/>
+                <outlet property="tryAnotherButton" destination="RcK-Y9-bdf" id="atK-3L-6Kv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,6 +26,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="R7M-Wb-L9E">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="J9W-9Z-4gQ">
                     <rect key="frame" x="20" y="74" width="374" height="788"/>
                     <subviews>
@@ -44,13 +53,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4h-Ik-Ypd">
-                                            <rect key="frame" x="40" y="0.0" width="256.5" height="32"/>
+                                            <rect key="frame" x="40" y="0.0" width="256" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XP-Di-naF">
-                                            <rect key="frame" x="304.5" y="0.0" width="69.5" height="32"/>
+                                            <rect key="frame" x="304" y="0.0" width="70" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -94,13 +103,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnM-Nr-2H3">
-                                            <rect key="frame" x="40" y="0.0" width="143" height="32"/>
+                                            <rect key="frame" x="40" y="0.0" width="143.5" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57j-yI-IFY">
-                                            <rect key="frame" x="191" y="0.0" width="183" height="32"/>
+                                            <rect key="frame" x="191.5" y="0.0" width="182.5" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -118,6 +127,9 @@
                             <color key="tintColor" systemColor="systemBackgroundColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Try another"/>
+                            <connections>
+                                <action selector="tryAnotherTapped:" destination="-1" eventType="touchUpInside" id="VLG-Qx-gQp"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -125,6 +137,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="R7M-Wb-L9E" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="06n-fo-PKN"/>
+                <constraint firstItem="R7M-Wb-L9E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DIp-jM-PrR"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Pz9-XY-Qi0"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QQL-hS-PYr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J9W-9Z-4gQ" secondAttribute="bottom" id="aXx-bo-s4k"/>

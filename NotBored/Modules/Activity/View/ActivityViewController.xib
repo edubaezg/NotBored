@@ -10,8 +10,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityViewController" customModule="NotBored" customModuleProvider="target">
             <connections>
-                <outlet property="activityDescriptionLabel" destination="VNg-5g-IXo" id="eQM-ak-r4k"/>
-                <outlet property="tryAnotherButton" destination="RcK-Y9-bdf" id="s6p-xO-Nfg"/>
+                <outlet property="activityDescriptionLabel" destination="VNg-5g-IXo" id="xoJ-tl-Tfg"/>
+                <outlet property="activityIndicator" destination="R7M-Wb-L9E" id="pe5-0j-sjm"/>
+                <outlet property="categoryLabel" destination="57j-yI-IFY" id="6QS-Ij-6vM"/>
+                <outlet property="categoryStackView" destination="0uU-tu-76t" id="qDk-JU-5Nu"/>
+                <outlet property="containerStackView" destination="J9W-9Z-4gQ" id="39U-RH-L17"/>
+                <outlet property="participantsLabel" destination="3XP-Di-naF" id="YwT-Kg-OUX"/>
+                <outlet property="priceLabel" destination="Jhg-gj-7Lf" id="Lek-7O-rgo"/>
+                <outlet property="tryAnotherButton" destination="RcK-Y9-bdf" id="atK-3L-6Kv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,6 +26,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="R7M-Wb-L9E">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="J9W-9Z-4gQ">
                     <rect key="frame" x="20" y="74" width="374" height="788"/>
                     <subviews>
@@ -118,6 +127,9 @@
                             <color key="tintColor" systemColor="systemBackgroundColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Try another"/>
+                            <connections>
+                                <action selector="tryAnotherTapped:" destination="-1" eventType="touchUpInside" id="VLG-Qx-gQp"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -125,6 +137,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="R7M-Wb-L9E" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="06n-fo-PKN"/>
+                <constraint firstItem="R7M-Wb-L9E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DIp-jM-PrR"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Pz9-XY-Qi0"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QQL-hS-PYr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J9W-9Z-4gQ" secondAttribute="bottom" id="aXx-bo-s4k"/>

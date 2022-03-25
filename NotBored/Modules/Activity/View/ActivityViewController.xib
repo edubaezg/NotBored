@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityViewController" customModule="NotBored" customModuleProvider="target">
             <connections>
                 <outlet property="activityDescriptionLabel" destination="VNg-5g-IXo" id="xoJ-tl-Tfg"/>
+                <outlet property="activityDetailStackView" destination="Crt-os-eOB" id="4uB-wv-fzY"/>
                 <outlet property="activityIndicator" destination="R7M-Wb-L9E" id="pe5-0j-sjm"/>
                 <outlet property="categoryLabel" destination="57j-yI-IFY" id="6QS-Ij-6vM"/>
                 <outlet property="categoryStackView" destination="0uU-tu-76t" id="qDk-JU-5Nu"/>

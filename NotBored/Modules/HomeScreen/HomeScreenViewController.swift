@@ -27,7 +27,8 @@ class HomeScreenViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction private func startButton(_ sender: Any) {
-        let activitiesVC = CategoriesViewController()
+        guard let participants = participantsAmountTextField.text else { return }
+        let activitiesVC = CategoriesViewController(participants: participants)
         navigationController?.pushViewController(activitiesVC, animated: true)
     }
     

@@ -22,6 +22,7 @@
 		B71034B627EAA2E900136989 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B527EAA2E900136989 /* ActivityService.swift */; };
 		B71034B927EAA48800136989 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B827EAA48800136989 /* Paths.swift */; };
 		B71034BC27EAA88000136989 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034BB27EAA88000136989 /* ActivityViewModel.swift */; };
+		B71034BE27ED0DDE00136989 /* ActivityOptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034BD27ED0DDE00136989 /* ActivityOptionsModel.swift */; };
 		DD7D95CB27EA332200522B99 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */; };
 		DD7D95CC27EA332200522B99 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */; };
 		DD7D95CD27EA332200522B99 /* TermAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */; };
@@ -50,6 +51,7 @@
 		B71034B527EAA2E900136989 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
 		B71034B827EAA48800136989 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		B71034BB27EAA88000136989 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		B71034BD27ED0DDE00136989 /* ActivityOptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityOptionsModel.swift; sourceTree = "<group>"; };
 		DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermAndConditionsViewController.xib; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				B710349C27E510E200136989 /* Global */,
 				DD7D95C427EA332200522B99 /* Modules */,
+				B71034B727EAA47500136989 /* Utils */,
 			);
 			path = NotBored;
 			sourceTree = "<group>";
@@ -125,7 +128,6 @@
 		B710349C27E510E200136989 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				B71034B727EAA47500136989 /* Utils */,
 				B710348327E50B0900136989 /* AppDelegate.swift */,
 				B710348527E50B0900136989 /* SceneDelegate.swift */,
 				B710348C27E50B0A00136989 /* Assets.xcassets */,
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				B71034B227EA62CA00136989 /* ActivityModel.swift */,
+				B71034BD27ED0DDE00136989 /* ActivityOptionsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				B71034B927EAA48800136989 /* Paths.swift in Sources */,
 				B71034A627E9553800136989 /* CategoryViewCell.swift in Sources */,
 				B710348627E50B0900136989 /* SceneDelegate.swift in Sources */,
+				B71034BE27ED0DDE00136989 /* ActivityOptionsModel.swift in Sources */,
 				DD7D95CE27EA332200522B99 /* TermAndConditionsViewController.swift in Sources */,
 				B71034A227E9525200136989 /* CategoriesViewController.swift in Sources */,
 				B71034AE27E96B0800136989 /* ActivityViewController.swift in Sources */,

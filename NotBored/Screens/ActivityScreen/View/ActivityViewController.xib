@@ -8,10 +8,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityView" customModule="NotBored" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityViewController" customModule="NotBored" customModuleProvider="target">
             <connections>
-                <outlet property="activityDescriptionLabel" destination="VNg-5g-IXo" id="eQM-ak-r4k"/>
-                <outlet property="tryAnotherButton" destination="RcK-Y9-bdf" id="s6p-xO-Nfg"/>
+                <outlet property="activityDescriptionLabel" destination="VNg-5g-IXo" id="xoJ-tl-Tfg"/>
+                <outlet property="activityDetailStackView" destination="Crt-os-eOB" id="4uB-wv-fzY"/>
+                <outlet property="activityIndicator" destination="R7M-Wb-L9E" id="pe5-0j-sjm"/>
+                <outlet property="categoryLabel" destination="57j-yI-IFY" id="6QS-Ij-6vM"/>
+                <outlet property="categoryStackView" destination="0uU-tu-76t" id="qDk-JU-5Nu"/>
+                <outlet property="containerStackView" destination="J9W-9Z-4gQ" id="39U-RH-L17"/>
+                <outlet property="participantsLabel" destination="3XP-Di-naF" id="YwT-Kg-OUX"/>
+                <outlet property="priceLabel" destination="Jhg-gj-7Lf" id="Lek-7O-rgo"/>
+                <outlet property="tryAnotherButton" destination="RcK-Y9-bdf" id="atK-3L-6Kv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,8 +27,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="R7M-Wb-L9E">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="J9W-9Z-4gQ">
-                    <rect key="frame" x="20" y="74" width="374" height="788"/>
+                    <rect key="frame" x="20" y="74" width="374" height="758"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNg-5g-IXo">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
@@ -30,7 +40,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Crt-os-eOB" userLabel="ActivityDetailStackView">
-                            <rect key="frame" x="0.0" y="318" width="374" height="136"/>
+                            <rect key="frame" x="0.0" y="303" width="374" height="136"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YyL-Rh-zoj" userLabel="ParticipantsStackView">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
@@ -110,7 +120,7 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcK-Y9-bdf">
-                            <rect key="frame" x="0.0" y="736" width="374" height="52"/>
+                            <rect key="frame" x="0.0" y="706" width="374" height="52"/>
                             <color key="backgroundColor" systemColor="labelColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="K4M-xF-Ars"/>
@@ -118,6 +128,9 @@
                             <color key="tintColor" systemColor="systemBackgroundColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Try another"/>
+                            <connections>
+                                <action selector="tryAnotherTapped:" destination="-1" eventType="touchUpInside" id="VLG-Qx-gQp"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -125,9 +138,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="R7M-Wb-L9E" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="06n-fo-PKN"/>
+                <constraint firstItem="R7M-Wb-L9E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DIp-jM-PrR"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Pz9-XY-Qi0"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QQL-hS-PYr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J9W-9Z-4gQ" secondAttribute="bottom" id="aXx-bo-s4k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J9W-9Z-4gQ" secondAttribute="bottom" constant="30" id="aXx-bo-s4k"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J9W-9Z-4gQ" secondAttribute="trailing" constant="20" id="rhT-tB-Lkk"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="26.785714285714285"/>

@@ -12,15 +12,29 @@
 		B710348D27E50B0A00136989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B710348C27E50B0A00136989 /* Assets.xcassets */; };
 		B710349027E50B0A00136989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B710348E27E50B0A00136989 /* LaunchScreen.storyboard */; };
 		B710349E27E9516E00136989 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B710349D27E9516E00136989 /* CategoriesViewModel.swift */; };
-		B71034A227E9525200136989 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034A027E9525200136989 /* CategoriesView.swift */; };
-		B71034A327E9525200136989 /* CategoriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034A127E9525200136989 /* CategoriesView.xib */; };
+		B71034A227E9525200136989 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034A027E9525200136989 /* CategoriesViewController.swift */; };
+		B71034A327E9525200136989 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034A127E9525200136989 /* CategoriesViewController.xib */; };
 		B71034A627E9553800136989 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034A427E9553800136989 /* CategoryViewCell.swift */; };
 		B71034A727E9553800136989 /* CategoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034A527E9553800136989 /* CategoryViewCell.xib */; };
-		B71034AE27E96B0800136989 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034AC27E96B0800136989 /* ActivityView.swift */; };
-		B71034AF27E96B0800136989 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034AD27E96B0800136989 /* ActivityView.xib */; };
+		B71034AE27E96B0800136989 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034AC27E96B0800136989 /* ActivityViewController.swift */; };
+		B71034AF27E96B0800136989 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71034AD27E96B0800136989 /* ActivityViewController.xib */; };
+		B71034B327EA62CA00136989 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B227EA62CA00136989 /* ActivityModel.swift */; };
+		B71034B627EAA2E900136989 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B527EAA2E900136989 /* ActivityService.swift */; };
+		B71034B927EAA48800136989 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034B827EAA48800136989 /* Paths.swift */; };
+		B71034BC27EAA88000136989 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034BB27EAA88000136989 /* ActivityViewModel.swift */; };
+		B71034BE27ED0DDE00136989 /* ActivityOptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034BD27ED0DDE00136989 /* ActivityOptionsModel.swift */; };
+		B71034C027EE229F00136989 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71034BF27EE229F00136989 /* CategoriesModel.swift */; };
+		DD7D95CB27EA332200522B99 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */; };
+		DD7D95CC27EA332200522B99 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */; };
+		DD7D95CD27EA332200522B99 /* TermAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */; };
+		DD7D95CE27EA332200522B99 /* TermAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D95CA27EA332200522B99 /* TermAndConditionsViewController.swift */; };
+		E9F9CF307AE5B7AAD1BB8EE1 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1B02579E88529F0A0FD3D3 /* Pods_NotBored.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F32927D7F986815463BC0C2 /* Pods-NotBored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.release.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.release.xcconfig"; sourceTree = "<group>"; };
+		4F1B02579E88529F0A0FD3D3 /* Pods_NotBored.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotBored.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1D005994B79548C87A933A /* Pods-NotBored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.debug.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.debug.xcconfig"; sourceTree = "<group>"; };
 		B710348027E50B0900136989 /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B710348327E50B0900136989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B710348527E50B0900136989 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,12 +42,22 @@
 		B710348F27E50B0A00136989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B710349127E50B0A00136989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B710349D27E9516E00136989 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
-		B71034A027E9525200136989 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
-		B71034A127E9525200136989 /* CategoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesView.xib; sourceTree = "<group>"; };
+		B71034A027E9525200136989 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		B71034A127E9525200136989 /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
 		B71034A427E9553800136989 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		B71034A527E9553800136989 /* CategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewCell.xib; sourceTree = "<group>"; };
-		B71034AC27E96B0800136989 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
-		B71034AD27E96B0800136989 /* ActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		B71034AC27E96B0800136989 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		B71034AD27E96B0800136989 /* ActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		B71034B227EA62CA00136989 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		B71034B527EAA2E900136989 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		B71034B827EAA48800136989 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		B71034BB27EAA88000136989 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		B71034BD27ED0DDE00136989 /* ActivityOptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityOptionsModel.swift; sourceTree = "<group>"; };
+		B71034BF27EE229F00136989 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermAndConditionsViewController.xib; sourceTree = "<group>"; };
+		DD7D95CA27EA332200522B99 /* TermAndConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermAndConditionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F9CF307AE5B7AAD1BB8EE1 /* Pods_NotBored.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1003DB162B010FF4430260 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E1D005994B79548C87A933A /* Pods-NotBored.debug.xcconfig */,
+				3F32927D7F986815463BC0C2 /* Pods-NotBored.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7667394A0FB49868E2E2BFBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B02579E88529F0A0FD3D3 /* Pods_NotBored.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B710347727E50B0900136989 = {
 			isa = PBXGroup;
 			children = (
 				B710348227E50B0900136989 /* NotBored */,
 				B710348127E50B0900136989 /* Products */,
+				0A1003DB162B010FF4430260 /* Pods */,
+				7667394A0FB49868E2E2BFBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,20 +111,20 @@
 			isa = PBXGroup;
 			children = (
 				B710349C27E510E200136989 /* Global */,
-				B710349B27E5100500136989 /* Categories */,
-				B71034AB27E96ADC00136989 /* Activity */,
+				DD7D95C427EA332200522B99 /* Screens */,
+				B71034B727EAA47500136989 /* Utils */,
 			);
 			path = NotBored;
 			sourceTree = "<group>";
 		};
-		B710349B27E5100500136989 /* Categories */ = {
+		B710349B27E5100500136989 /* CategoriesScreen */ = {
 			isa = PBXGroup;
 			children = (
 				B71034A927E955E100136989 /* Model */,
 				B71034A827E955D300136989 /* View */,
 				B71034AA27E955E900136989 /* ViewModel */,
 			);
-			path = Categories;
+			path = CategoriesScreen;
 			sourceTree = "<group>";
 		};
 		B710349C27E510E200136989 /* Global */ = {
@@ -98,8 +142,8 @@
 		B71034A827E955D300136989 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B71034A027E9525200136989 /* CategoriesView.swift */,
-				B71034A127E9525200136989 /* CategoriesView.xib */,
+				B71034A027E9525200136989 /* CategoriesViewController.swift */,
+				B71034A127E9525200136989 /* CategoriesViewController.xib */,
 				B71034A427E9553800136989 /* CategoryViewCell.swift */,
 				B71034A527E9553800136989 /* CategoryViewCell.xib */,
 			);
@@ -109,6 +153,7 @@
 		B71034A927E955E100136989 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B71034BF27EE229F00136989 /* CategoriesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,13 +166,86 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		B71034AB27E96ADC00136989 /* Activity */ = {
+		B71034AB27E96ADC00136989 /* ActivityScreen */ = {
 			isa = PBXGroup;
 			children = (
-				B71034AC27E96B0800136989 /* ActivityView.swift */,
-				B71034AD27E96B0800136989 /* ActivityView.xib */,
+				B71034B427EAA2D600136989 /* Service */,
+				B71034B127EA62B800136989 /* Model */,
+				B71034B027EA62A900136989 /* View */,
+				B71034BA27EAA86700136989 /* ViewModel */,
 			);
-			path = Activity;
+			path = ActivityScreen;
+			sourceTree = "<group>";
+		};
+		B71034B027EA62A900136989 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B71034AC27E96B0800136989 /* ActivityViewController.swift */,
+				B71034AD27E96B0800136989 /* ActivityViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B71034B127EA62B800136989 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B71034B227EA62CA00136989 /* ActivityModel.swift */,
+				B71034BD27ED0DDE00136989 /* ActivityOptionsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B71034B427EAA2D600136989 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B71034B527EAA2E900136989 /* ActivityService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B71034B727EAA47500136989 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B71034B827EAA48800136989 /* Paths.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B71034BA27EAA86700136989 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B71034BB27EAA88000136989 /* ActivityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD7D95C427EA332200522B99 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D95C527EA332200522B99 /* HomeScreen */,
+				DD7D95C827EA332200522B99 /* TermAndConditionsScreen */,
+				B710349B27E5100500136989 /* CategoriesScreen */,
+				B71034AB27E96ADC00136989 /* ActivityScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DD7D95C527EA332200522B99 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D95C627EA332200522B99 /* HomeScreenViewController.xib */,
+				DD7D95C727EA332200522B99 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		DD7D95C827EA332200522B99 /* TermAndConditionsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */,
+				DD7D95CA27EA332200522B99 /* TermAndConditionsViewController.swift */,
+			);
+			path = TermAndConditionsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B710349427E50B0A00136989 /* Build configuration list for PBXNativeTarget "NotBored" */;
 			buildPhases = (
+				0B98C217AC5990D9F195E891 /* [CP] Check Pods Manifest.lock */,
 				B710347C27E50B0900136989 /* Sources */,
 				B710347D27E50B0900136989 /* Frameworks */,
 				B710347E27E50B0900136989 /* Resources */,
+				725F1849E6C720B203A3A599 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,26 +309,78 @@
 			buildActionMask = 2147483647;
 			files = (
 				B710349027E50B0A00136989 /* LaunchScreen.storyboard in Resources */,
-				B71034A327E9525200136989 /* CategoriesView.xib in Resources */,
+				B71034A327E9525200136989 /* CategoriesViewController.xib in Resources */,
 				B71034A727E9553800136989 /* CategoryViewCell.xib in Resources */,
-				B71034AF27E96B0800136989 /* ActivityView.xib in Resources */,
+				DD7D95CD27EA332200522B99 /* TermAndConditionsViewController.xib in Resources */,
+				DD7D95CB27EA332200522B99 /* HomeScreenViewController.xib in Resources */,
+				B71034AF27E96B0800136989 /* ActivityViewController.xib in Resources */,
 				B710348D27E50B0A00136989 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B98C217AC5990D9F195E891 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotBored-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		725F1849E6C720B203A3A599 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B710347C27E50B0900136989 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71034B627EAA2E900136989 /* ActivityService.swift in Sources */,
 				B710349E27E9516E00136989 /* CategoriesViewModel.swift in Sources */,
 				B710348427E50B0900136989 /* AppDelegate.swift in Sources */,
+				B71034B327EA62CA00136989 /* ActivityModel.swift in Sources */,
+				B71034B927EAA48800136989 /* Paths.swift in Sources */,
 				B71034A627E9553800136989 /* CategoryViewCell.swift in Sources */,
 				B710348627E50B0900136989 /* SceneDelegate.swift in Sources */,
-				B71034A227E9525200136989 /* CategoriesView.swift in Sources */,
-				B71034AE27E96B0800136989 /* ActivityView.swift in Sources */,
+				B71034BE27ED0DDE00136989 /* ActivityOptionsModel.swift in Sources */,
+				DD7D95CE27EA332200522B99 /* TermAndConditionsViewController.swift in Sources */,
+				B71034A227E9525200136989 /* CategoriesViewController.swift in Sources */,
+				B71034AE27E96B0800136989 /* ActivityViewController.swift in Sources */,
+				B71034C027EE229F00136989 /* CategoriesModel.swift in Sources */,
+				DD7D95CC27EA332200522B99 /* HomeScreenViewController.swift in Sources */,
+				B71034BC27EAA88000136989 /* ActivityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +516,7 @@
 		};
 		B710349527E50B0A00136989 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1D005994B79548C87A933A /* Pods-NotBored.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +543,7 @@
 		};
 		B710349627E50B0A00136989 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F32927D7F986815463BC0C2 /* Pods-NotBored.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

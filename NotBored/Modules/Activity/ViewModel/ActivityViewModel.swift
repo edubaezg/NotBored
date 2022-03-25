@@ -1,8 +1,8 @@
 import Foundation
 
 class ActivityViewModel {
-    func getActivity(completion: @escaping (Result<ActivityModel, ActivityError>) -> Void) {
-        ActivityService.getActivity { result in
+    func getActivity(_ activityOptions: ActivityOptionsModel, completion: @escaping (Result<ActivityModel, ActivityError>) -> Void) {
+        ActivityService.getActivity(activityOptions) { result in
             switch result {
             case .success(let activityResponse):
                 completion(.success(activityResponse))

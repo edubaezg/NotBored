@@ -32,6 +32,6 @@ extension HomeScreenViewController {
     
     @IBAction func goToTermAndConditions(_ sender: Any) {
         let termAndConditions = TermAndConditionsViewController()
-        navigationController?.pushViewController(termAndConditions, animated: true)
+        navigationController?.present(termAndConditions, animated: true, completion: nil)
     }
 }

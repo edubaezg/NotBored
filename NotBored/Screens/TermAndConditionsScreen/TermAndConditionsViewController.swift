@@ -4,9 +4,16 @@ class TermAndConditionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        setup()
     }
     
+}
+
+// MARK: - Methods
+extension TermAndConditionsViewController {
+    func setup() {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 }
 
 // MARK: - Actions

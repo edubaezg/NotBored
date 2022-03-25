@@ -50,12 +50,13 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="24" id="UeW-9l-oHa"/>
                             </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain">
                                 <attributedString key="attributedTitle">
                                     <fragment content="Term and conditions">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="18" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>

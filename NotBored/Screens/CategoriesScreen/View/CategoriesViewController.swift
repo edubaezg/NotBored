@@ -6,7 +6,7 @@ class CategoriesViewController: UIViewController {
     
     var participants: String
     let categoryCellIdentifier = "CategoryViewCell"
-    let categories: [String] = ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"].sorted()
+    let categories = CategoriesModel().categories
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -4,6 +4,9 @@ class HomeScreenViewController: UIViewController {
 
     @IBOutlet weak private var participantsAmountTextField: UITextField!
     
+    @IBOutlet weak var startButton: UIButton! {
+        didSet { startButton.layer.cornerRadius = 8 }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

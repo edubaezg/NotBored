@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="NotBored" customModuleProvider="target">
             <connections>
                 <outlet property="participantsAmountTextField" destination="aav-3A-lKd" id="omt-sR-aZL"/>
+                <outlet property="startButton" destination="yhm-VD-sxg" id="9tM-wg-unf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,14 +21,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kKE-un-yIm" userLabel="buttonsStackView">
-                    <rect key="frame" x="36" y="754" width="342" height="84"/>
+                    <rect key="frame" x="20" y="754" width="374" height="84"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-VD-sxg">
-                            <rect key="frame" x="0.0" y="0.0" width="342" height="48"/>
-                            <color key="backgroundColor" systemColor="linkColor"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                            <color key="backgroundColor" systemColor="labelColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="vrw-Kz-FcW"/>
                             </constraints>
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain">
                                 <attributedString key="attributedTitle">
@@ -44,7 +46,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaP-Do-ydd">
-                            <rect key="frame" x="78.5" y="60" width="185.5" height="24"/>
+                            <rect key="frame" x="94.5" y="60" width="185.5" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="24" id="UeW-9l-oHa"/>
                             </constraints>
@@ -78,23 +80,19 @@
                         <constraint firstAttribute="height" constant="36" id="bRU-pH-17O"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                    <color key="textColor" systemColor="linkColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8QJ-m9-fhC" userLabel="participantsStackView">
-                    <rect key="frame" x="36" y="406" width="342" height="84"/>
+                    <rect key="frame" x="20" y="408.5" width="374" height="79.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuY-gv-X2D">
-                            <rect key="frame" x="0.0" y="0.0" width="99" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="24" id="BRK-CO-B5u"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <rect key="frame" x="0.0" y="0.0" width="89.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aav-3A-lKd">
-                            <rect key="frame" x="0.0" y="36" width="342" height="48"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of participants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aav-3A-lKd">
+                            <rect key="frame" x="0.0" y="31.5" width="374" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="GAp-qD-ywd"/>
                             </constraints>
@@ -109,16 +107,16 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.62924915552139282" green="0.92128193378448486" blue="0.90971893072128296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="kKE-un-yIm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="2Gw-da-7Rs"/>
+                <constraint firstItem="kKE-un-yIm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2Gw-da-7Rs"/>
                 <constraint firstItem="8QJ-m9-fhC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3Qb-YX-k5i"/>
-                <constraint firstItem="8QJ-m9-fhC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="CF2-Ma-ayx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKE-un-yIm" secondAttribute="trailing" constant="36" id="GGo-1c-l4U"/>
+                <constraint firstItem="8QJ-m9-fhC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="CF2-Ma-ayx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKE-un-yIm" secondAttribute="trailing" constant="20" id="GGo-1c-l4U"/>
                 <constraint firstItem="JCN-X7-iVm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="JBG-Sh-lRA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kKE-un-yIm" secondAttribute="bottom" constant="24" id="Rsk-Ry-cwr"/>
                 <constraint firstItem="JCN-X7-iVm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bj9-fZ-SbP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8QJ-m9-fhC" secondAttribute="trailing" constant="36" id="fAR-M0-BJc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8QJ-m9-fhC" secondAttribute="trailing" constant="20" id="fAR-M0-BJc"/>
             </constraints>
             <point key="canvasLocation" x="132" y="131"/>
         </view>
@@ -126,9 +124,6 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

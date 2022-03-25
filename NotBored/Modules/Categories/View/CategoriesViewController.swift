@@ -4,9 +4,9 @@ class CategoriesViewController: UIViewController {
 
     @IBOutlet weak var categoriesTableView: UITableView!
     
-    let categories: [String] = ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"].sorted()
-    let categoryCellIdentifier = "CategoryViewCell"
     var participants: String
+    let categoryCellIdentifier = "CategoryViewCell"
+    let categories: [String] = ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"].sorted()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ extension CategoriesViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(randomTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Random", style: .plain, target: self, action: #selector(randomTapped))
         
         categoriesTableView.delegate = self
         categoriesTableView.dataSource = self

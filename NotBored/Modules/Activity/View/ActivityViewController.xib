@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,7 +31,7 @@
                     <rect key="frame" x="197" y="438" width="20" height="20"/>
                 </activityIndicatorView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="J9W-9Z-4gQ">
-                    <rect key="frame" x="20" y="74" width="374" height="788"/>
+                    <rect key="frame" x="20" y="74" width="374" height="758"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNg-5g-IXo">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
@@ -40,7 +40,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Crt-os-eOB" userLabel="ActivityDetailStackView">
-                            <rect key="frame" x="0.0" y="318" width="374" height="136"/>
+                            <rect key="frame" x="0.0" y="303" width="374" height="136"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YyL-Rh-zoj" userLabel="ParticipantsStackView">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
@@ -54,13 +54,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4h-Ik-Ypd">
-                                            <rect key="frame" x="40" y="0.0" width="256" height="32"/>
+                                            <rect key="frame" x="40" y="0.0" width="256.5" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XP-Di-naF">
-                                            <rect key="frame" x="304" y="0.0" width="70" height="32"/>
+                                            <rect key="frame" x="304.5" y="0.0" width="69.5" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -104,13 +104,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnM-Nr-2H3">
-                                            <rect key="frame" x="40" y="0.0" width="143.5" height="32"/>
+                                            <rect key="frame" x="40" y="0.0" width="143" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57j-yI-IFY">
-                                            <rect key="frame" x="191.5" y="0.0" width="182.5" height="32"/>
+                                            <rect key="frame" x="191" y="0.0" width="183" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -120,7 +120,7 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcK-Y9-bdf">
-                            <rect key="frame" x="0.0" y="736" width="374" height="52"/>
+                            <rect key="frame" x="0.0" y="706" width="374" height="52"/>
                             <color key="backgroundColor" systemColor="labelColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="K4M-xF-Ars"/>
@@ -142,7 +142,7 @@
                 <constraint firstItem="R7M-Wb-L9E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DIp-jM-PrR"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Pz9-XY-Qi0"/>
                 <constraint firstItem="J9W-9Z-4gQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QQL-hS-PYr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J9W-9Z-4gQ" secondAttribute="bottom" id="aXx-bo-s4k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J9W-9Z-4gQ" secondAttribute="bottom" constant="30" id="aXx-bo-s4k"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J9W-9Z-4gQ" secondAttribute="trailing" constant="20" id="rhT-tB-Lkk"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="26.785714285714285"/>

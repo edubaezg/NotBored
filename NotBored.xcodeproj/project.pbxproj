@@ -109,20 +109,20 @@
 			isa = PBXGroup;
 			children = (
 				B710349C27E510E200136989 /* Global */,
-				DD7D95C427EA332200522B99 /* Modules */,
+				DD7D95C427EA332200522B99 /* Screens */,
 				B71034B727EAA47500136989 /* Utils */,
 			);
 			path = NotBored;
 			sourceTree = "<group>";
 		};
-		B710349B27E5100500136989 /* Categories */ = {
+		B710349B27E5100500136989 /* CategoriesScreen */ = {
 			isa = PBXGroup;
 			children = (
 				B71034A927E955E100136989 /* Model */,
 				B71034A827E955D300136989 /* View */,
 				B71034AA27E955E900136989 /* ViewModel */,
 			);
-			path = Categories;
+			path = CategoriesScreen;
 			sourceTree = "<group>";
 		};
 		B710349C27E510E200136989 /* Global */ = {
@@ -163,7 +163,7 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		B71034AB27E96ADC00136989 /* Activity */ = {
+		B71034AB27E96ADC00136989 /* ActivityScreen */ = {
 			isa = PBXGroup;
 			children = (
 				B71034B427EAA2D600136989 /* Service */,
@@ -171,7 +171,7 @@
 				B71034B027EA62A900136989 /* View */,
 				B71034BA27EAA86700136989 /* ViewModel */,
 			);
-			path = Activity;
+			path = ActivityScreen;
 			sourceTree = "<group>";
 		};
 		B71034B027EA62A900136989 /* View */ = {
@@ -216,15 +216,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		DD7D95C427EA332200522B99 /* Modules */ = {
+		DD7D95C427EA332200522B99 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				B710349B27E5100500136989 /* Categories */,
-				B71034AB27E96ADC00136989 /* Activity */,
 				DD7D95C527EA332200522B99 /* HomeScreen */,
-				DD7D95C827EA332200522B99 /* TermAndConditions */,
+				DD7D95C827EA332200522B99 /* TermAndConditionsScreen */,
+				B710349B27E5100500136989 /* CategoriesScreen */,
+				B71034AB27E96ADC00136989 /* ActivityScreen */,
 			);
-			path = Modules;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		DD7D95C527EA332200522B99 /* HomeScreen */ = {
@@ -236,13 +236,13 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
-		DD7D95C827EA332200522B99 /* TermAndConditions */ = {
+		DD7D95C827EA332200522B99 /* TermAndConditionsScreen */ = {
 			isa = PBXGroup;
 			children = (
 				DD7D95C927EA332200522B99 /* TermAndConditionsViewController.xib */,
 				DD7D95CA27EA332200522B99 /* TermAndConditionsViewController.swift */,
 			);
-			path = TermAndConditions;
+			path = TermAndConditionsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

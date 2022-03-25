@@ -1,10 +1,3 @@
-//
-//  TermAndConditionsViewController.swift
-//  NotBored
-//
-//  Created by Eduardo Alfonso Gutierrez Gomez on 19/03/22.
-//
-
 import UIKit
 
 class TermAndConditionsViewController: UIViewController {
@@ -14,7 +7,10 @@ class TermAndConditionsViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    // MARK: - Actions
+}
+
+// MARK: - Actions
+extension TermAndConditionsViewController {
     @IBAction func goBackHome(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

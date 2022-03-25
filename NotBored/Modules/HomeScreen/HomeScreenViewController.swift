@@ -1,31 +1,26 @@
-//
-//  HomeScreen2ViewController.swift
-//  NotBored
-//
-//  Created by Eduardo Alfonso Gutierrez Gomez on 19/03/22.
-//
-
 import UIKit
 
 class HomeScreenViewController: UIViewController {
-    // MARK: - Outlets
-    
+
     @IBOutlet weak private var participantsAmountTextField: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //participantsAmountTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //navigationController?.navigationBar.backgroundColor = .red
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    // MARK: - IBActions
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        participantsAmountTextField.resignFirstResponder()
+    }
+}
+
+// MARK: - Actions
+extension HomeScreenViewController {
     @IBAction private func startButton(_ sender: Any) {
         guard let participants = participantsAmountTextField.text else { return }
         let activitiesVC = CategoriesViewController(participants: participants)
@@ -36,15 +31,4 @@ class HomeScreenViewController: UIViewController {
         let termAndConditions = TermAndConditionsViewController()
         navigationController?.pushViewController(termAndConditions, animated: true)
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        participantsAmountTextField.resignFirstResponder()
-    }
 }
-
-/*extension HomeScreenViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-    return true
-    }
-}*/
